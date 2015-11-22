@@ -141,6 +141,10 @@ trainSet <-
 allData <- rbind(testSet, trainSet)
 
 ## Finally,  use ddply (from plyr) to take colMeans for all numeric columns
+## __ACROSS__GROUPS__.
+
+## For each combination of activity/participant, take the column means
+## of all numeric columns 
 require(plyr)
 
 summaryData <-
